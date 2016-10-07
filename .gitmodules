@@ -1,0 +1,3 @@
+[submodule "KittyWar-iPhone"]
+	path = KittyWar-iPhone
+	url = https://github.com/brucedsu/KittyWar-iPhone

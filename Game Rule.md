@@ -6,25 +6,38 @@
 * Guard (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
 * Scratch (Attack): choose one player to attack and cause 1 point damage.
 
+## Winning Conditions
+
+1. If all the opponents lose their HP, the one who survives is the winner.
+2. If someone gets 20 HP at first, he or she wins.
+
+## Game Phases for One Round
+
+1. The beginning of the round: conditionally draw chance cards or use ability
+2. Enact strategies: each player enacts a strategy which includes a target (maybe multiple targets), a basic movement (pur, guard, scratch) and an optional chance card which must match the selected basic movement.
+3. Show cards: every player shows his or her strategy at the same time
+4. Settle strategies: start settle strategy from a random user along a random direction (either clockwise or counterclockwise)
+5. The end of the round: conditionally draw chance cards or use ability
+
 ## Chance Cards
 
 ### Pur Chance Cards
 
-* Double Healing: totally gain 2 HP if you don't get attacked
-* Guaranteed Healing: totally gain 1 HP no matter you get attacked or not
-* Heal and Draw: draw a new chance card if successfully gain HP
+* Double Purring: totally gain 2 HP if you don't get attacked
+* Guaranteed Purring: totally gain 1 HP no matter you get attacked or not
+* Pur and Draw: draw a new chance card if successfully gain HP
 
 ### Guard Chance Cards
 
-* Reverse: reverse the attack (damage)
-* Dodge and Heal: totally gain 1 HP if you successfully dodge
-* Dodge and Draw: draw a new chance card if you successfully dodge
+* Reverse Scratch: reverse the damage
+* Guard and Heal: totally gain 1 HP if you successfully dodge
+* Guard and Draw: draw a new chance card if you successfully dodge
 
 ### Scratch Chance Cards
 
 * Can't Reverse: damage can't be reversed
-* Can't Dodge: scratch can't be dodged
-* Double Damage: totally cause 2 points damage
+* Can't Guard: scratch can't be dodged
+* Double Scratch: totally cause 2 points damage
 
 ## Cats
 
@@ -58,7 +71,7 @@
 
 * __Introduction__: The Exotic Shorthair is a breed of cat developed to be a short-haired version of the Persian. The Exotic is similar to the Persian in many ways, including temperament and conformation, with the exception of the short dense coat. Curious and playful, they are friendly to other cats and dogs, but they don’t like being left alone and need the presence of their owner.
 * __Initial HP__: 10
-* __Default Ability__:
+* __Default Ability__: at the end of each two rounds, randomly draw a chance card from used chance cards
 
 ### Siamese Cat
 
@@ -74,6 +87,8 @@
 
 * __Introduction__: The Abyssinian is a breed of domestic short-haired cat with a distinctive "ticked" tabby coat, in which individual hairs are banded with different colors. Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities.
 * __Initial HP__: 10
-* __Default Ability__:
+* __Default Ability__: retrieve used chance card
 
 ## Abilities Pool
+
+### Rejuvenation

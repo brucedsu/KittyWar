@@ -2,42 +2,54 @@
 
 ## Basic Movements
 
-* Pur (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked
-* Guard (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
-* Scratch (Attack): choose one player to attack and cause 1 point damage.
+* __Pur__ (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked
+* __Guard__ (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
+* __Scratch__ (Attack): choose one player to attack and cause 1 point damage.
 
 ## Winning Conditions
+
+Reach either condition 1 or condition 2 to win the game
 
 1. If all the opponents lose their HP, the one who survives is the winner.
 2. If someone gets 20 HP at first, he or she wins.
 
-## Game Phases for One Round
+## Round Phases
 
-1. The beginning of the round: conditionally draw chance cards or use ability
-2. Enact strategies: each player enacts a strategy which includes a target (maybe multiple targets), a basic movement (pur, guard, scratch) and an optional chance card which must match the selected basic movement.
-3. Show cards: every player shows his or her strategy at the same time
-4. Settle strategies: start settle strategy from a random user along a random direction (either clockwise or counterclockwise)
-5. The end of the round: conditionally draw chance cards or use ability
+1. __Prelude__: conditionally draw chance cards or use ability
+2. __Enacting strategies__: each player enacts a strategy which includes a target (maybe multiple targets), a basic movement (pur, guard, scratch) and an optional chance card which must match the selected basic movement.
+3. __Cards Showing__: every player shows his or her strategy at the same time
+4. __Strategy Settlement__: start settle strategy from a random user along a random direction (either clockwise or counterclockwise)
+5. __Postlude__: conditionally draw chance cards or use ability
 
 ## Chance Cards
 
 ### Pur Chance Cards
 
-* Double Purring: totally gain 2 HP if you don't get attacked
-* Guaranteed Purring: totally gain 1 HP no matter you get attacked or not
-* Pur and Draw: draw a new chance card if successfully gain HP
+* __Double Purring__: totally gain 2 HP if you don't get attacked
+* __Guaranteed Purring__: totally gain 1 HP no matter you get attacked or not
+* __Pur and Draw__: draw a new chance card if successfully gain 1 HP
 
 ### Guard Chance Cards
 
-* Reverse Scratch: reverse the damage
-* Guard and Heal: totally gain 1 HP if you successfully dodge
-* Guard and Draw: draw a new chance card if you successfully dodge
+* __Reverse Scratch__: reverse the damage
+* __Guard and Heal__: totally gain 1 HP if you successfully dodge
+* __Guard and Draw__: draw a new chance card if you successfully dodge
 
 ### Scratch Chance Cards
 
-* Can't Reverse: damage can't be reversed
-* Can't Guard: scratch can't be dodged
-* Double Scratch: totally cause 2 points damage
+* __Can't Reverse__: damage can't be reversed
+* __Can't Guard__: scratch can't be dodged
+* __Double Scratch__: totally cause 2 points damage
+
+## Abilities
+
+### 1. Rejuvenation
+
+* __Effect__: gain 1 HP
+* __Phase__: postlude
+* __Cooldown__: 2 rounds
+
+### 2.
 
 ## Cats
 
@@ -47,7 +59,7 @@
 
 * __Introduction__: The Persian cat is a long-haired breed of cat characterized by its round face and short muzzle. The Persian is generally described as a quiet cat. Typically placid in nature, it adapts quite well to apartment life.
 * __Initial HP__ : 8
-* __Default Ability__: gain 1 HP for every 2 rounds
+* __Default Ability__: Rejuvenation
 
 ### Ragdoll Cat
 
@@ -89,6 +101,3 @@
 * __Initial HP__: 10
 * __Default Ability__: retrieve used chance card
 
-## Abilities Pool
-
-### Rejuvenation

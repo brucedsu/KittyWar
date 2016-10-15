@@ -4,7 +4,7 @@
 
 * Pur (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked
 * Guard (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
-* Scratch (Attack): choose one player to attack and case 1 point damage.
+* Scratch (Attack): choose one player to attack and cause 1 point damage.
 
 ## Chance Cards
 
@@ -12,6 +12,7 @@
 
 * Double Healing: totally gain 2 HP if you don't get attacked
 * Guaranteed Healing: totally gain 1 HP no matter you get attacked or not
+* Heal and Draw: draw a new chance card if successfully gain HP
 
 ### Guard Chance Cards
 
@@ -23,7 +24,7 @@
 
 * Can't Reverse: damage can't be reversed
 * Can't Dodge: scratch can't be dodged
-* Double Damage: totally case 2 points damage
+* Double Damage: totally cause 2 points damage
 
 ## Cats
 

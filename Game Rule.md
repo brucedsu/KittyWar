@@ -1,5 +1,30 @@
 # Game Rule
 
+## Basic Movements
+
+* Pur (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked
+* Guard (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
+* Scratch (Attack): choose one player to attack and case 1 point damage.
+
+## Chance Cards
+
+### Pur Chance Cards
+
+* Double Healing: totally gain 2 HP if you don't get attacked
+* Guaranteed Healing: totally gain 1 HP no matter you get attacked or not
+
+### Guard Chance Cards
+
+* Reverse: reverse the attack (damage)
+* Dodge and Heal: totally gain 1 HP if you successfully dodge
+* Dodge and Draw: draw a new chance card if you successfully dodge
+
+### Scratch Chance Cards
+
+* Can't Reverse: damage can't be reversed
+* Can't Dodge: scratch can't be dodged
+* Double Damage: totally case 2 points damage
+
 ## Cats
 
 ### Persian Cat
@@ -51,5 +76,3 @@
 * __Default Ability__:
 
 ## Abilities Pool
-
-## Chance Cards

@@ -85,6 +85,20 @@ Reach either condition 1 or condition 2 to win the game
 * __Cooldown__: 2 rounds
 * __Owner__: Abyssinian Cat
 
+### 7. Attacker
+
+* __Effect__: draw 1 chance card if you successfully cause two points damage
+* __Phase__: N/A
+* __Cooldown__: N/A
+* __Owner__: N/A
+
+### 8. Critical Hit
+
+* __Effect__: double the damage you cause in current round (work together with Double Scratch chance card) at the cost of losing 1 HP (lose 1 HP at postlude phase)
+* __Phase__: prelude
+* __Cooldown__: 2 rounds
+* __Owner__: N/A
+
 ## Cats
 
 ### Persian Cat

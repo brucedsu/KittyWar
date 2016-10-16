@@ -49,7 +49,23 @@ Reach either condition 1 or condition 2 to win the game
 * __Phase__: postlude
 * __Cooldown__: 2 rounds
 
-### 2.
+### 2. Gentleman
+
+* __Effect__: gain 1 chance card if one successfully dodges two points damage
+* __Phase__: N/A
+* __Cooldown__: N/A
+
+### 3. Hunting
+
+* __Effect__: if doesn't have neither "can't dodge" attack chance card nor "can't reverse" attack card for neither this round nor next round, randomly gain one from the two after next round
+* __Phase__: postlude
+* __Cooldown__: N/A
+
+### 4. Recycling
+
+* __Effect__: randomly draw a chance card from used chance cards
+* __Phase__: postlude
+* __Cooldown__: 2 rounds
 
 ## Cats
 
@@ -67,7 +83,7 @@ Reach either condition 1 or condition 2 to win the game
 
 * __Introduction__: The Ragdoll's sweet temperament is probably its most outstanding trait. Ragdolls are large, bulky and handsome cats. They have been commonly referred to as "the gentle giants" - because in spite of their handsomeness and grace, they are extremely even-tempered and docile.
 * __Initial HP__: 10
-* __Default Ability__: gain 1 chance card if successfully dodges two points of damage
+* __Default Ability__: Gentleman
 
 ### Maine Coon Cat
 
@@ -75,7 +91,7 @@ Reach either condition 1 or condition 2 to win the game
 
 * __Introduction__: It has a distinctive physical appearance and valuable hunting skills. It is one of the oldest natural breeds in North America, specifically "native" to the state of Maine (though the feline was simply introduced there),[4] where it is the official state cat.
 * __Initial HP__: 10
-* __Default Ability__: if doesn't have neither "can't dodge" attack chance card nor "can't reverse" attack card for neither this round nor next round, randomly gain one from the two after next round
+* __Default Ability__: Hunting
 
 ### Exotic Shorthair Cat
 
@@ -83,7 +99,7 @@ Reach either condition 1 or condition 2 to win the game
 
 * __Introduction__: The Exotic Shorthair is a breed of cat developed to be a short-haired version of the Persian. The Exotic is similar to the Persian in many ways, including temperament and conformation, with the exception of the short dense coat. Curious and playful, they are friendly to other cats and dogs, but they don’t like being left alone and need the presence of their owner.
 * __Initial HP__: 10
-* __Default Ability__: at the end of each two rounds, randomly draw a chance card from used chance cards
+* __Default Ability__: Recycling
 
 ### Siamese Cat
 

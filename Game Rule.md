@@ -2,7 +2,7 @@
 
 ## Basic Movements
 
-* __Pur__ (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked
+* __Purr__ (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked (no matter how much damage you receive)
 * __Guard__ (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
 * __Scratch__ (Attack): choose one player to attack and cause 1 point damage.
 
@@ -16,18 +16,18 @@ Reach either condition 1 or condition 2 to win the game
 ## Round Phases
 
 1. __Prelude__: conditionally draw chance cards or use ability
-2. __Enacting strategies__: each player enacts a strategy which includes a target (maybe multiple targets), a basic movement (pur, guard, scratch) and an optional chance card which must match the selected basic movement.
-3. __Cards Showing__: every player shows his or her strategy at the same time
-4. __Strategy Settlement__: start settle strategy from a random user along a random direction (either clockwise or counterclockwise)
+2. __Enacting strategies__: each player enacts a strategy which includes a target (maybe multiple targets), a basic movement (purr, guard, scratch) and an optional chance card which must match the selected basic movement.
+3. __Showing Cards__: every player shows his or her strategy at the same time
+4. __Strategy Settlement__: start settling strategy from a random user along a random direction (either clockwise or counterclockwise)
 5. __Postlude__: conditionally draw chance cards or use ability
 
 ## Chance Cards
 
-### Pur Chance Cards
+### Purr Chance Cards
 
 * __Double Purring__: totally gain 2 HP if you don't get attacked
 * __Guaranteed Purring__: totally gain 1 HP no matter you get attacked or not
-* __Pur and Draw__: draw a new chance card if successfully gain 1 HP
+* __Purr and Draw__: draw a new chance card if successfully gain 1 HP
 
 ### Guard Chance Cards
 
@@ -48,24 +48,42 @@ Reach either condition 1 or condition 2 to win the game
 * __Effect__: gain 1 HP
 * __Phase__: postlude
 * __Cooldown__: 2 rounds
+* __Owner__: Persian Cat
 
 ### 2. Gentleman
 
-* __Effect__: gain 1 chance card if one successfully dodges two points damage
+* __Effect__: gain 1 chance card if you successfully dodge two points damage
 * __Phase__: N/A
 * __Cooldown__: N/A
+* __Owner__: Ragdoll Cat
 
 ### 3. Hunting
 
 * __Effect__: if doesn't have neither "can't dodge" attack chance card nor "can't reverse" attack card for neither this round nor next round, randomly gain one from the two after next round
 * __Phase__: postlude
 * __Cooldown__: N/A
+* __Owner__: Maine Coon Cat
 
 ### 4. Recycling
 
 * __Effect__: randomly draw a chance card from used chance cards
 * __Phase__: postlude
 * __Cooldown__: 2 rounds
+* __Owner__: Exotic Shorthair Cat
+
+### 5. Loneliness
+
+* __Effect__: skip current round, draw 2 chance cards
+* __Phase__: prelude
+* __Cooldown__: 2 rounds
+* __Owner__: Siamese Cat
+
+### 6. Spotlight
+
+* __Effect__: be the first one in strategy settlement phase
+* __Phase__: prelude
+* __Cooldown__: 2 rounds
+* __Owner__: Abyssinian Cat
 
 ## Cats
 
@@ -105,15 +123,15 @@ Reach either condition 1 or condition 2 to win the game
 
 ![Siamese](/img/siamese.jpg "Siamese")
 
-* __Introduction__: The breed standard of the modern Siamese calls for an elongated, tubular, and muscular body and a triangular head, forming a perfect triangle from the tip of the nose to each tip of the ear. Siamese are usually very affectionate and intelligent cats, renowned for their social nature.
+* __Introduction__: The breed standard of the modern Siamese calls for an elongated, tubular, and muscular body and a triangular head, forming a perfect triangle from the tip of the nose to each tip of the ear. Siamese are usually very affectionate and intelligent cats, renowned for their social nature. Often they bond strongly to a single person. Siamese cats, due to their desire to be near people or other cats, occasionally suffer from depression if left alone for long periods of time, and it is for this reason that Siamese cats are often bought in pairs so that they can keep each other company.
 * __Initial HP__: 10
-* __Default Ability__:
+* __Default Ability__: Loneliness
 
 ### Abyssinian Cat
 
 ![Abyssinian](/img/asyssinian.jpg "Abyssinian")
 
-* __Introduction__: The Abyssinian is a breed of domestic short-haired cat with a distinctive "ticked" tabby coat, in which individual hairs are banded with different colors. Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities.
+* __Introduction__: The Abyssinian is a breed of domestic short-haired cat with a distinctive "ticked" tabby coat, in which individual hairs are banded with different colors. Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities. They are said to become depressed without constant activity and attention from their owners.
 * __Initial HP__: 10
-* __Default Ability__: retrieve used chance card
+* __Default Ability__: Spotlight
 

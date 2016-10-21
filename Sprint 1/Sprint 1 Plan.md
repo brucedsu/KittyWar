@@ -3,8 +3,8 @@
 * Product name: Kitty War
 * Team name: Dog & Koala Bear
 * Sprint completion date: Oct 19, 2016
-* Revision number: 1.1
-* Revision date: Oct 6, 2016
+* Revision number: 1.2
+* Revision date: Oct 19, 2016
 
 ## Goal
 
@@ -13,52 +13,47 @@
 
 ## User Stories
 
-### As a back-end developer, I need a user database to store user information and card a database to store card data
+### As a back-end developer, I need a database to store user information and card data
 
+* (5) Research Django and MySQL
 * (2) Configure SQL server
 * (2) Configure Django server to process these requests
-* (3) Develop working SQL model for this information
-* Total Story Points: 7
+* Total Story Points: 9
 
-### As a player, I want to be able to register an account via a website
+### As a player, I want to register an account via a website
 
 * (3) Build basic website to handle registration
 * (2) Store data into a database to track who has registered
 * Total Story Points: 5
 
-### As a player, I want to be able to register an account via an iPhone app
+### As a player, I want to register an account via an iPhone app
 
 * (8) Build front end of iPhone app to accept registration
-* (8) Configure custom python server to accept registration requests and forward to database
-* (8) Build protocol between iPhone app and server
-* Total Story Points: 24
+* (5) Configure django web server to accept registration requests and forward to database
+* (2) Ensure protocol is working between django server and iPhone client 
+* Total Story Points: 15
 
-### As a player, I should be able to log into the website and view what cards I have
+### As a player, I want to log into a website and view my cards
 
 * (5) Build webpage to display all of this data
 * (2) Enable authentication and appropriate setting on Django server
-* (2) Ensure SQL model accurately has user information plus what cards they have
-* Total Story Points: 9
+* (3) Build SQL model for card data
+* Total Story Points: 10
 
-### As a player, I should to able to log into the iPhone app and view what cards I have
+### As a player, I want to log into an iPhone app and view my cards
 
-* (8) Build UI centered around signing in and display personal saved information
-* (8) Ensure custom python server routes login data to database and authenticates the user
-* Total Story Points: 16
+* (5) Build UI centered around signing in and displaying personal saved information
+* (5) Ensure custom python server routes login data to database and authenticates the user
+* Total Story Points: 10
 
 ### As a player, I am matched against an opponent and put into a lobby
 
-* (8) Improve custom server to wait for connections using UDP and place connecting players into a lobby
+* (5) Improve custom server to wait for connections using TCP and place connecting players into a lobby
 * (5) Establish connection to the server from iPhone app
-* (5) Ensure data is proper sent between client and server
-* Total Story Points: 18
+* (5) Ensure data is properly sent between client and server
+* Total Story Points: 15
 
-### As a back-end developer, I need to create APIs on the server side for the front-end app
-
-* (8) Continue to improve API client/server for better communication
-* Total Story Points: 8
-
-#### Grand Total Story Points: 87
+#### Grand Total Story Points: 64
 
 ## Team roles
 

@@ -80,11 +80,8 @@
 #### As a back-end developer, I need to implement the games logic (picking characters, drawing cards, using cards against the target) at the server side.
 
 ## Initial Burnup Chart
-<<<<<<< HEAD
-(https://docs.google.com/spreadsheets/d/1UTgSQnq5KGxRl0Mk2hptpFh8HUBJQI9BpOhrItX3quM/pubchart?oid=344030991&format=image "Burnup Chart")
-=======
-[//]: # (![Alt text](https://docs.google.com/spreadsheets/d/1cR18Zlbq7eRBpJ_cUE_FLFMCvzjE2VScGuYUP0Wnkp8/pubchart?oid=1455941923&format=image "Burnup Chart"))
->>>>>>> 5560a56a864fa67e3e4313870f29de6b7c4f8a93
+![Alt text](https://docs.google.com/spreadsheets/d/1UTgSQnq5KGxRl0Mk2hptpFh8HUBJQI9BpOhrItX3quM/pubchart?oid=344030991&format=image "Burnup Chart")
+
 
 ## Scrum Times
 

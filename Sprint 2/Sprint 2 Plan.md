@@ -2,6 +2,8 @@
 
 * Product name: Kitty War
 * Team name: Dog & Koala Bear
+* Revision: 2
+* Revision date: oct 31, 2016
 
 ## Goal
 
@@ -32,21 +34,12 @@
 * (5) Properly establish connection to the Database
 * (0) Do your best
 
-### (16) As a player, I want to log into a website and view my cards
-
-* (5) Build webpage to display all of this data
-* (2) Add chance cards to the database
-* (3) Give the user their first 2 default cat cards
-* (3) Give the user access to the 3 basic cards
-* (3) Give the user access to the random lot of chance cards
-
-
 ### (13) As a player, I want to log into an iPhone app and view my cards
 * (5) Build UI centered around signing in and displaying personal saved information
 * (5) Ensure custom python server routes login data to database and authenticates the user
 * (3) grant user access to their cards
 
-#### Grand Total Story Points: 60
+#### Grand Total Story Points: 54
 
 ## Team roles
 

@@ -75,7 +75,7 @@
 * Times: 10:00 - 10:30
 
 ## Initial Burnup Chart
-![Alt text](https://docs.google.com/drawings/d/e/2PACX-1vTJm6KtYsDdef_wS1tX961jPtDZDkNJ8VfS-tKlqx0xBrrl0RgjoKhYPaHDfFCF6GH6c7lv4l6tMl94/pub?w=960&h=360 "Burnup Chart")
+![Alt text](https://docs.google.com/drawings/d/e/2PACX-1vTJm6KtYsDdef_wS1tX961jPtDZDkNJ8VfS-tKlqx0xBrrl0RgjoKhYPaHDfFCF6GH6c7lv4l6tMl94/pub?w=960&h=720 "Burnup Chart")
 
 
 

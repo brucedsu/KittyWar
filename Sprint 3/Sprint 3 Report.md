@@ -1,70 +1,58 @@
-# Sprint 3 Plan
+# Sprint 3 Report
 
 * Product name: Kitty War
 * Team name: Dog & Koala Bear
 
-## Goal
+## Actions to stop doing:
 
-* Finish game logic and implement some polish so the app is presentable.
+* Meeting at random locations
+
+## Actions to start doing:
+
+* Meeting in assigned lab room
+
+## Actions to keep doing:
+
+* Daily Scrum meetings plus our extra meetings to discuss program structure
+* Keep working on our trello board and using slack for communication
+
+## Work Completed ✓
 
 ## User Stories
 
 ### As a back-end developer, I need to implement the games logic at the server side. (12)
 
-* (2) Implement the distribution of random chance cards
-* (2) Implement the drawing of cards
-* (3) Allow the player to target their opponent
-* (5) Implement turn order
+* ✓(2) Implement the distribution of random chance cards
+* ✓(2) Implement the drawing of cards
+* ✓(3) Allow the player to target their opponent
+* ✓(5) Implement turn order
 
 ### As a game player, the game now is playable. Game logics are correct. The animation of the front-end app is clear and intuitive. (11)
 
-* (5) Fix any bugs in game logic that might occur
-* (3) Incorporate animations for playing/drawing cards
-* (3) incorporate transitions from phases
+* ✓(5) Fix any bugs in game logic that might occur
+* ✓(3) Incorporate animations for playing/drawing cards
+* ✓(3) incorporate transitions from phases
 
 ### As a front-end developer, I need to keep polishing the app, including transitions between views and card animations. (6)
 
-* (2) Add graphics for the different cat cars
-* (2) Add graphics for the different abilities
-* (2) Add graphics for the different basic ability cards
+* ✓(2) Add graphics for the different cat cars
+* ✓(2) Add graphics for the different abilities
+* ✓(2) Add graphics for the different basic ability cards
 
 ### As a back-end developer, I need to keep improving all the algorithms to make the whole system more stable. (13)
 
-* (5) make sure match scoring is succesfully implemented
-* (3) make sure match results are properly stored in the database
-* (5) make sure server is secure and stable
+* ✓(5) make sure match scoring is succesfully implemented
+* ✓(3) make sure match results are properly stored in the database
+* ✓(5) make sure server is secure and stable
 
-#### Grand Total Story Points: 42
 
-## Team roles
+## Work Completion Rate
 
-* :bowtie: Hejia Su (iPhone & Backend Developer)
-* :blush: Yueqiao Zhang (iPhone Developer)
-* :smirk: Juan Gonzalez (Backend Developer)
-* :sleeping: :sleeping: :sleeping: :sleeping: :sleeping: :sleeping: :sleeping: :sleeping: Eric Martinez (Backend Developer)
+### Total User Stories Completed
+* 4/4
 
-## Initial Tasks
-
-### Hejia Su
-
-* ✓ (2) Implement the distribution of random chance cards
-* ✓ (2) Implement the drawing of cards
-* ✓ (3) Allow the player to target their opponent
-
-### Yueqiao Zhang
-
-* ✓ (2) Add graphics for the different cat cars
-* ✓ (2) Add graphics for the different abilities
-* ✓ (2) Add graphics for the different basic ability cards
-
-### Juan Gonzalez
-
-* ✓ (5) Implement turn order
-
-### Eric Martinez
-
-* ✓ (5) Implement turn order
-* ✓ (5) Fix any bugs in game logic that might occur
+### Total User Story Tasks Completed
+* 13/13
 
 ## Scrum Times
 

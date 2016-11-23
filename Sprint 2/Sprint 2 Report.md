@@ -1,4 +1,4 @@
-# Sprint 1 Report
+# Sprint 2 Report
 
 * Product name: Kitty War
 * Team name: Dog & Koala Bear

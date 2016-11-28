@@ -9,11 +9,15 @@
 
 ## User Stories
 
-### As a back-end developer, I need to implement the games logic at the server side. (12)
+### As a back-end developer, I need to implement the games logic at the server side. (32)
 
 * (2) Implement the distribution of random chance cards
 * (2) Implement the drawing of cards
 * (3) Allow the player to target their opponent
+* (5) Allow the player to select a cat
+* (5) Add functionality that allows the match to transition between phases
+* (5) Implement the distribution of random abilities
+* (5) Allow the player to select a move (purr, guard, scratch, skip)
 * (5) Implement turn order
 
 ### As a game player, the game now is playable. Game logics are correct. The animation of the front-end app is clear and intuitive. (11)
@@ -32,9 +36,9 @@
 
 * (5) make sure match scoring is succesfully implemented
 * (3) make sure match results are properly stored in the database
-* (5) make sure server is secure and stable
+* (5) Keep updating server log system to properly log all data for debugging
 
-#### Grand Total Story Points: 42
+#### Grand Total Story Points: 62
 
 ## Team roles
 

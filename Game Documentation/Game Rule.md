@@ -2,9 +2,9 @@
 
 ## Basic Movements
 
-* __Purr__ (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked (no matter how much damage you receive)
-* __Guard__ (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
-* __Scratch__ (Attack): choose one player to attack and cause 1 point damage.
+* (0) __Purr__ (Heal): target should be yourself, +1 HP if no one attacks you, totally lose 1 HP if you get attacked (no matter how much damage you receive)
+* (1) __Guard__ (Dodge): target should be yourself. Defense for all kinds of attack except attack with can't dodge attack chance card.
+* (2) __Scratch__ (Attack): choose one player to attack and cause 1 point damage.
 
 ## Winning Conditions
 
@@ -25,74 +25,74 @@ Reach either condition 1 or condition 2 to win the game
 
 ### Purr Chance Cards
 
-* __Double Purring__: totally gain 2 HP if you don't get attacked
-* __Guaranteed Purring__: totally gain 1 HP no matter you get attacked or not
-* __Purr and Draw__: draw a new chance card if successfully gain 1 HP
+* (0) __Double Purring__: totally gain 2 HP if you don't get attacked
+* (1) __Guaranteed Purring__: totally gain 1 HP no matter you get attacked or not
+* (2) __Purr and Draw__: draw a new chance card if successfully gain 1 HP
 
 ### Guard Chance Cards
 
-* __Reverse Scratch__: reverse the damage
-* __Guard and Heal__: totally gain 1 HP if you successfully dodge
-* __Guard and Draw__: draw a new chance card if you successfully dodge
+* (3) __Reverse Scratch__: reverse the damage
+* (4) __Guard and Heal__: totally gain 1 HP if you successfully dodge
+* (5) __Guard and Draw__: draw a new chance card if you successfully dodge
 
 ### Scratch Chance Cards
 
-* __Can't Reverse__: damage can't be reversed
-* __Can't Guard__: scratch can't be dodged
-* __Double Scratch__: totally cause 2 points damage
+* (6) __Can't Reverse__: damage can't be reversed
+* (7) __Can't Guard__: scratch can't be dodged
+* (8) __Double Scratch__: totally cause 2 points damage
 
 ## Abilities
 
-### 1. Rejuvenation
+### (0) 1. Rejuvenation
 
 * __Effect__: gain 1 HP
 * __Phase__: postlude
 * __Cooldown__: 2 rounds
 * __Owner__: Persian Cat
 
-### 2. Gentleman
+### (1) 2. Gentleman
 
 * __Effect__: gain 1 chance card if you successfully dodge two points damage
 * __Phase__: N/A
 * __Cooldown__: N/A
 * __Owner__: Ragdoll Cat
 
-### 3. Hunting
+### (2) 3. Hunting
 
 * __Effect__: if doesn't have neither "can't dodge" attack chance card nor "can't reverse" attack card for neither this round nor next round, randomly gain one from the two after next round
 * __Phase__: postlude
 * __Cooldown__: N/A
 * __Owner__: Maine Coon Cat
 
-### 4. Recycling
+### (3) 4. Recycling
 
 * __Effect__: randomly draw a chance card from used chance cards
 * __Phase__: postlude
 * __Cooldown__: 2 rounds
 * __Owner__: Exotic Shorthair Cat
 
-### 5. Loneliness
+### (4) 5. Loneliness
 
 * __Effect__: skip current round, draw 2 chance cards
 * __Phase__: prelude
 * __Cooldown__: 2 rounds
 * __Owner__: Siamese Cat
 
-### 6. Spotlight
+### (5) 6. Spotlight
 
 * __Effect__: be the first one in strategy settlement phase
 * __Phase__: prelude
 * __Cooldown__: 2 rounds
 * __Owner__: Abyssinian Cat
 
-### 7. Attacker
+### (6) 7. Attacker
 
 * __Effect__: draw 1 chance card if you successfully cause two points damage
 * __Phase__: N/A
 * __Cooldown__: N/A
 * __Owner__: N/A
 
-### 8. Critical Hit
+### (7) 8. Critical Hit
 
 * __Effect__: double the damage you cause in current round (work together with Double Scratch chance card) at the cost of losing 1 HP (lose 1 HP at postlude phase)
 * __Phase__: prelude
@@ -101,7 +101,7 @@ Reach either condition 1 or condition 2 to win the game
 
 ## Cats
 
-### Persian Cat
+### (0) Persian Cat
 
 ![Persian](/img/persian.jpg "Persian")
 
@@ -109,7 +109,7 @@ Reach either condition 1 or condition 2 to win the game
 * __Initial HP__ : 8
 * __Default Ability__: Rejuvenation
 
-### Ragdoll Cat
+### (1) Ragdoll Cat
 
 ![Ragdoll](/img/ragdoll.jpg "Ragdoll")
 
@@ -117,7 +117,7 @@ Reach either condition 1 or condition 2 to win the game
 * __Initial HP__: 10
 * __Default Ability__: Gentleman
 
-### Maine Coon Cat
+### (2) Maine Coon Cat
 
 ![Maine Coon](/img/maine_coon.jpg "Maine Coon")
 
@@ -125,7 +125,7 @@ Reach either condition 1 or condition 2 to win the game
 * __Initial HP__: 10
 * __Default Ability__: Hunting
 
-### Exotic Shorthair Cat
+### (3) Exotic Shorthair Cat
 
 ![Exotic Shorthair](/img/exotic_shorthair.jpg "Exotic Shorthair")
 
@@ -133,7 +133,7 @@ Reach either condition 1 or condition 2 to win the game
 * __Initial HP__: 10
 * __Default Ability__: Recycling
 
-### Siamese Cat
+### (4) Siamese Cat
 
 ![Siamese](/img/siamese.jpg "Siamese")
 
@@ -141,7 +141,7 @@ Reach either condition 1 or condition 2 to win the game
 * __Initial HP__: 10
 * __Default Ability__: Loneliness
 
-### Abyssinian Cat
+### (5) Abyssinian Cat
 
 ![Abyssinian](/img/asyssinian.jpg "Abyssinian")
 

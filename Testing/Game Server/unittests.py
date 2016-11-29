@@ -8,6 +8,24 @@ class TestServerMethods(unittest.TestCase):
 
     """
         --------
+        SPRINT 1
+        --------
+    """
+
+    def test_body_int(self):
+
+        byte = '\x00'
+        byte = Network.byte_int(byte)
+        self.assertEqual(byte, 0)
+
+    """
+        --------
+        SPRINT 2
+        --------
+    """
+
+    """
+        --------
         SPRINT 3
         --------
     """

@@ -27,6 +27,8 @@ class TestServerMethods(unittest.TestCase):
         response += '1'.encode('utf-8')
         self.assertEqual(Network.generate_responseb(5, 259, '1'),response)
 
+    # Testing sql Query to make sure it correctly pulls data from db and also throws exception
+    # when incorect query statement is used
     def test_sql_query(self):
         db = Network.db_connection()
         with db.cursor(DictCursor) as cursor:
@@ -47,8 +49,8 @@ class TestServerMethods(unittest.TestCase):
         SPRINT 2
         --------
     """
-    # Testing Session methods
 
+    # Card tests involve making sure the propper card data is being read.
     def test_cat_card(self):
         Session.card_information = pull_card_data()
         self.catflag = Request(Flags.CAT_CARDS, None, None, None)
@@ -153,6 +155,7 @@ class TestServerMethods(unittest.TestCase):
         self.assertIsNotNone(self.session1.last_response)
         self.assertEqual(self.session1.last_response, response_test)
 
+    # Verify reads the correct token and throws exception when ingenuine token used
     def test_verify(self):
         self.session1 = Session([None, None])
         self.session1.userprofile = {'token': 'makeamericagreatagain'}

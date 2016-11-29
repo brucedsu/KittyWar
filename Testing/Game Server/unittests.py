@@ -16,17 +16,8 @@ class TestServerMethods(unittest.TestCase):
         --------
     """
 
-    def test_body_int(self):
-
-        byte = '\x00'
-        byte = Network.byte_int(byte)
-        self.assertEqual(byte, 0)
-
     def test_int3byte(self):
         self.assertEqual(Network.int_3byte(259), bytes([0x00, 0x01, 0x03]))
-
-    def test_byte_int(self):
-        self.assertEqual(Network.byte_int('x10'), 7876912)
 
     def test_generate_responseh(self):
         self.assertEqual(Network.generate_responseh(5, 259), bytes([0x05, 0x00, 0x01, 0x03]))
@@ -288,7 +279,8 @@ class TestServerMethods(unittest.TestCase):
     def test_random_chances(self):
 
         self.assertEqual(len(self.player1.chance_cards), 0)
-        Chance.random_chances(self.player1)
+        Chance.random_chance(self.player1)
+        Chance.random_chance(self.player1)
         self.assertEqual(len(self.player1.chance_cards), 2)
 
     # Test Chance has_chance function
@@ -352,7 +344,7 @@ class TestServerMethods(unittest.TestCase):
         ability_used = Ability.p_ability01(correct_phase, self.player1)
         self.assertFalse(ability_used)
 
-        self.player1.ddodged = 2
+        self.player1.dmg_dodged = 2
         ability_used = Ability.p_ability01(correct_phase, self.player1)
         self.assertTrue(ability_used)
         self.assertEqual(len(self.player1.chance_cards), 1)
@@ -369,7 +361,7 @@ class TestServerMethods(unittest.TestCase):
         ability_used = Ability.p_ability06(correct_phase, self.player1)
         self.assertFalse(ability_used)
 
-        self.player1.ddealt = 2
+        self.player1.dmg_dealt = 2
         ability_used = Ability.p_ability06(correct_phase, self.player1)
         self.assertTrue(ability_used)
         self.assertEqual(len(self.player1.chance_cards), 1)

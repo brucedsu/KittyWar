@@ -1,7 +1,11 @@
 import unittest
+import pymysql
+from pymysql.cursors import DictCursor
 
 from match import Match, Ability, Chance, Player, Phases, Moves,active_map, passive_map
-from network import Network, Flags
+from network import Network, Flags, Request
+from sessions import Session
+from gameserver import pull_card_data
 
 
 class TestServerMethods(unittest.TestCase):
@@ -12,17 +16,159 @@ class TestServerMethods(unittest.TestCase):
         --------
     """
 
-    def test_body_int(self):
+    def test_int3byte(self):
+        self.assertEqual(Network.int_3byte(259), bytes([0x00, 0x01, 0x03]))
 
-        byte = '\x00'
-        byte = Network.byte_int(byte)
-        self.assertEqual(byte, 0)
+    def test_generate_responseh(self):
+        self.assertEqual(Network.generate_responseh(5, 259), bytes([0x05, 0x00, 0x01, 0x03]))
+
+    def test_generate_responseb(self):
+        response = bytes([0x05, 0x00, 0x01, 0x03])
+        response += '1'.encode('utf-8')
+        self.assertEqual(Network.generate_responseb(5, 259, '1'),response)
+
+    # Testing sql Query to make sure it correctly pulls data from db and also throws exception
+    # when incorect query statement is used
+    def test_sql_query(self):
+        db = Network.db_connection()
+        with db.cursor(DictCursor) as cursor:
+            cursor.execute('SELECT * FROM deisume_kittywar.KittyWar_catcard;')
+        proper_query = cursor.fetchall()
+
+        test_result = Network.sql_query('SELECT * FROM deisume_kittywar.KittyWar_catcard;')
+        self.assertEqual(test_result, proper_query)
+
+        print()
+        bad_query = 'SELECT bad_query FROM on purpose'
+        except_result = Network.sql_query(bad_query)
+        self.assertIsNone(except_result)
+
 
     """
         --------
         SPRINT 2
         --------
     """
+
+    # Card tests involve making sure the propper card data is being read.
+    def test_cat_card(self):
+        Session.card_information = pull_card_data()
+        self.catflag = Request(Flags.CAT_CARDS, None, None, None)
+        self.session1 = Session([None, None])
+
+        body = str(Session.card_information['cats'])
+        size = len(body)
+        response_test = bytearray()
+        response_test.append(self.catflag.flag)
+        _3byte = bytearray()
+
+        for i in range(0, 3):
+            _3byte.insert(0, size & 0xFF)
+            size >>= 8
+
+        response_test += _3byte
+
+        if isinstance(body, str):
+            response_test += body.encode('utf-8')
+        else:
+            response_test.append(body)
+
+        self.session1.cat_cards(self.catflag)
+        self.assertIsNotNone(self.session1.last_response)
+        self.assertEqual(self.session1.last_response, response_test)
+
+    def test_basic_card(self):
+        Session.card_information = pull_card_data()
+        self.basicflag = Request(Flags.BASIC_CARDS, None, None, None)
+        self.session1 = Session([None, None])
+
+        body = str(Session.card_information['moves'])
+        size = len(body)
+        response_test = bytearray()
+        response_test.append(self.basicflag.flag)
+        _3byte = bytearray()
+
+        for i in range(0, 3):
+            _3byte.insert(0, size & 0xFF)
+            size >>= 8
+
+        response_test += _3byte
+
+        if isinstance(body, str):
+            response_test += body.encode('utf-8')
+        else:
+            response_test.append(body)
+
+        self.session1.basic_cards(self.basicflag)
+        self.assertIsNotNone(self.session1.last_response)
+        self.assertEqual(self.session1.last_response, response_test)
+
+    def test_chance_card(self):
+        Session.card_information = pull_card_data()
+        self.chanceflag = Request(Flags.CHANCE_CARDS, None, None, None)
+        self.session1 = Session([None, None])
+
+        body = str(Session.card_information['chances'])
+        size = len(body)
+        response_test = bytearray()
+        response_test.append(self.chanceflag.flag)
+        _3byte = bytearray()
+
+        for i in range(0, 3):
+            _3byte.insert(0, size & 0xFF)
+            size >>= 8
+
+        response_test += _3byte
+
+        if isinstance(body, str):
+            response_test += body.encode('utf-8')
+        else:
+            response_test.append(body)
+
+        self.session1.chance_cards(self.chanceflag)
+        self.assertIsNotNone(self.session1.last_response)
+        self.assertEqual(self.session1.last_response, response_test)
+
+    def test_ability_card(self):
+        Session.card_information = pull_card_data()
+        self.abilityflag = Request(Flags.ABILITY_CARDS, None, None, None)
+        self.session1 = Session([None, None])
+
+        body = str(Session.card_information['abilities'])
+        size = len(body)
+        response_test = bytearray()
+        response_test.append(self.abilityflag.flag)
+        _3byte = bytearray()
+
+        for i in range(0, 3):
+            _3byte.insert(0, size & 0xFF)
+            size >>= 8
+
+        response_test += _3byte
+
+        if isinstance(body, str):
+            response_test += body.encode('utf-8')
+        else:
+            response_test.append(body)
+
+        self.session1.ability_cards(self.abilityflag)
+        self.assertIsNotNone(self.session1.last_response)
+        self.assertEqual(self.session1.last_response, response_test)
+
+    # Verify reads the correct token and throws exception when ingenuine token used
+    def test_verify(self):
+        self.session1 = Session([None, None])
+        self.session1.userprofile = {'token': 'makeamericagreatagain'}
+
+        purrect_token = Request(None, 'makeamericagreatagain', None, None)
+        incorrect_token = Request(None, 'pokemon go to the polls', None, None)
+
+        self.assertFalse(self.session1.verified(purrect_token))
+        self.assertFalse(self.session1.verified(incorrect_token))
+
+        self.session1.authenticated = True
+        self.assertTrue(self.session1.verified(purrect_token))
+        self.assertFalse(self.session1.verified(incorrect_token))
 
     """
         --------
@@ -136,7 +282,8 @@ class TestServerMethods(unittest.TestCase):
     def test_random_chances(self):
 
         self.assertEqual(len(self.player1.chance_cards), 0)
-        Chance.random_chances(self.player1)
+        Chance.random_chance(self.player1)
+        Chance.random_chance(self.player1)
         self.assertEqual(len(self.player1.chance_cards), 2)
 
     # Test Chance has_chance function
@@ -200,7 +347,7 @@ class TestServerMethods(unittest.TestCase):
         ability_used = Ability.p_ability01(correct_phase, self.player1)
         self.assertFalse(ability_used)
 
-        self.player1.ddodged = 2
+        self.player1.dmg_dodged = 2
         ability_used = Ability.p_ability01(correct_phase, self.player1)
         self.assertTrue(ability_used)
         self.assertEqual(len(self.player1.chance_cards), 1)
@@ -217,7 +364,7 @@ class TestServerMethods(unittest.TestCase):
         ability_used = Ability.p_ability06(correct_phase, self.player1)
         self.assertFalse(ability_used)
 
-        self.player1.ddealt = 2
+        self.player1.dmg_dealt = 2
         ability_used = Ability.p_ability06(correct_phase, self.player1)
         self.assertTrue(ability_used)
         self.assertEqual(len(self.player1.chance_cards), 1)

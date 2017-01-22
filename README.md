@@ -1,6 +1,5 @@
 # Project KittyWar
 ## CMPS 115 - Introduction to Software Engineering 
-*Coure Grade: A*
 
 Emphasizes the characteristics of well-engineered software systems. Topics include requirements analysis and specification, design, programming, verification and validation, maintenance, and project management. Practical and research methods are studied. Imparts an understanding of the steps used to effectively develop computer software.
 
@@ -9,7 +8,7 @@ Utilized Agile Scrum methodology and Unit Testing
 ### Game Description
 IOS GAME
 
-Server supports 50+ concurrent connections and matchmacking
+Server supports 50+ concurrent connections and matchmaking
 
 Two player card game based on cats, each player selects a cat as their avatar.
 

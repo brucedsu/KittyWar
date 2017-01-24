@@ -1,6 +1,0 @@
-[submodule "KittyWar-iPhone"]
-	path = KittyWar-iPhone
-	url = https://github.com/brucedsu/KittyWar-iPhone
-[submodule "KittyWar-Server"]
-	path = KittyWar-Server
-	url = https://github.com/brucedsu/KittyWar-Server
